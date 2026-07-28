@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Pizza Social Media — CRM & growth for indie studios and creators</title>
+<meta name="description" content="CRM and social growth for indie game studios and creators. Wishlists, Discord, launch campaigns — built by people who ship, not agency-speak.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --void:#1B1410;
+    --crust:#2A1F17;
+    --crust-line:#3E2E22;
+    --cheese:#E8A33D;
+    --sauce:#C1432A;
+    --paper:#F3E9D8;
+    --paper-dim:#C9BCA6;
+    --basil:#7C9160;
+    --radius:14px;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+
+  html{scroll-behavior:smooth;}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+
+  body{
+    background:var(--void);
+    background-image:
+      radial-gradient(ellipse 900px 500px at 15% -10%, rgba(232,163,61,0.10), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 90% 10%, rgba(193,67,42,0.10), transparent 55%);
+    color:var(--paper);
+    font-family:'Hanken Grotesk', sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:inherit;}
+
+  ::selection{background:var(--sauce); color:var(--paper);}
+
+  :focus-visible{
+    outline:2px solid var(--cheese);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  .wrap{
+    max-width:920px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  h1,h2,h3,.eyebrow,.brand-name{
+    font-family:'Bricolage Grotesque', sans-serif;
+  }
+
+  .mono{
+    font-family:'Space Mono', monospace;
+  }
+
+  /* ---------- NAV ---------- */
+  nav{
+    padding:28px 0 0;
+  }
+  nav .wrap{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+    font-size:1.05rem;
+    letter-spacing:-0.01em;
+  }
+  .brand-mark{
+    font-size:1.4rem;
+    filter:drop-shadow(0 0 10px rgba(232,163,61,0.45));
+  }
+  nav .cta-small{
+    font-family:'Hanken Grotesk', sans-serif;
+    font-weight:600;
+    font-size:0.9rem;
+    color:var(--void);
+    background:var(--cheese);
+    padding:9px 18px;
+    border-radius:100px;
+    text-decoration:none;
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+    display:inline-block;
+  }
+  nav .cta-small:hover{
+    transform:translateY(-1px);
+    box-shadow:0 6px 20px rgba(232,163,61,0.3);
+  }
+
+  /* ---------- HERO ---------- */
+  header.hero{
+    padding:96px 0 88px;
+  }
+  header.hero .wrap{
+    display:grid;
+    grid-template-columns:1.15fr 0.85fr;
+    gap:56px;
+    align-items:center;
+  }
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:0.78rem;
+    font-weight:600;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--cheese);
+    margin-bottom:22px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:7px;height:7px;
+    border-radius:50%;
+    background:var(--sauce);
+    box-shadow:0 0 0 3px rgba(193,67,42,0.25);
+  }
+  h1{
+    font-size:clamp(2.3rem, 5vw, 3.4rem);
+    font-weight:700;
+    line-height:1.06;
+    letter-spacing:-0.02em;
+    color:var(--paper);
+  }
+  h1 em{
+    font-style:normal;
+    color:var(--cheese);
+  }
+  .hero-sub{
+    margin-top:24px;
+    font-size:1.12rem;
+    color:var(--paper-dim);
+    max-width:46ch;
+    line-height:1.6;
+  }
+  .hero-actions{
+    margin-top:34px;
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  .btn-primary{
+    font-family:'Hanken Grotesk', sans-serif;
+    font-weight:700;
+    font-size:0.98rem;
+    color:var(--void);
+    background:var(--cheese);
+    padding:14px 26px;
+    border-radius:100px;
+    text-decoration:none;
+    display:inline-block;
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn-primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 28px rgba(232,163,61,0.32);
+  }
+  .btn-ghost{
+    font-weight:600;
+    font-size:0.95rem;
+    color:var(--paper-dim);
+    text-decoration:none;
+    border-bottom:1px solid var(--crust-line);
+    padding-bottom:2px;
+    transition:color 0.15s ease, border-color 0.15s ease;
+  }
+  .btn-ghost:hover{
+    color:var(--paper);
+    border-color:var(--cheese);
+  }
+
+  /* ---------- RECEIPT (signature element) ---------- */
+  .receipt{
+    background:var(--paper);
+    color:#231a13;
+    border-radius:4px;
+    padding:26px 24px 30px;
+    transform:rotate(2.5deg);
+    box-shadow:0 30px 60px -20px rgba(0,0,0,0.55);
+    position:relative;
+  }
+  .receipt::before,
+  .receipt::after{
+    content:"";
+    position:absolute;
+    left:0; right:0;
+    height:10px;
+    background-image:radial-gradient(circle at 6px 5px, var(--void) 5px, transparent 5.5px);
+    background-size:14px 12px;
+    background-repeat:repeat-x;
+  }
+  .receipt::before{ top:-5px; }
+  .receipt::after{ bottom:-5px; }
+  .receipt-head{
+    text-align:center;
+    font-family:'Space Mono', monospace;
+    font-weight:700;
+    font-size:0.92rem;
+    letter-spacing:0.04em;
+    padding-bottom:14px;
+    border-bottom:1px dashed #8a7a63;
+  }
+  .receipt-sub{
+    text-align:center;
+    font-family:'Space Mono', monospace;
+    font-size:0.68rem;
+    color:#6b5c47;
+    margin-top:4px;
+  }
+  .receipt-items{
+    list-style:none;
+    margin:16px 0;
+    font-family:'Space Mono', monospace;
+    font-size:0.78rem;
+  }
+  .receipt-items li{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    padding:7px 0;
+    border-bottom:1px dotted #c9bca6;
+  }
+  .receipt-items li span:last-child{ color:#6b5c47; }
+  .receipt-total{
+    display:flex;
+    justify-content:space-between;
+    font-family:'Space Mono', monospace;
+    font-weight:700;
+    font-size:0.85rem;
+    padding-top:12px;
+    border-top:1px dashed #8a7a63;
+  }
+  .receipt-foot{
+    text-align:center;
+    font-family:'Space Mono', monospace;
+    font-size:0.66rem;
+    color:#8a7a63;
+    margin-top:16px;
+    letter-spacing:0.03em;
+  }
+
+  /* ---------- SECTION SHELL ---------- */
+  section{
+    padding:76px 0;
+    border-top:1px solid var(--crust-line);
+  }
+  .section-head{
+    max-width:56ch;
+    margin-bottom:44px;
+  }
+  .section-head .eyebrow{ margin-bottom:14px; }
+  h2{
+    font-size:clamp(1.6rem, 3vw, 2.1rem);
+    font-weight:700;
+    letter-spacing:-0.01em;
+    color:var(--paper);
+  }
+  .section-head p{
+    margin-top:14px;
+    color:var(--paper-dim);
+    font-size:1.02rem;
+    line-height:1.65;
+  }
+
+  /* ---------- MENU (services) ---------- */
+  .menu-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+  }
+  .menu-card{
+    background:var(--crust);
+    border:1px solid var(--crust-line);
+    border-radius:var(--radius);
+    padding:28px 24px;
+    transition:border-color 0.2s ease, transform 0.2s ease;
+  }
+  .menu-card:hover{
+    border-color:var(--cheese);
+    transform:translateY(-3px);
+  }
+  .menu-card .num{
+    font-family:'Space Mono', monospace;
+    font-size:0.75rem;
+    color:var(--sauce);
+    letter-spacing:0.05em;
+  }
+  .menu-card h3{
+    font-size:1.18rem;
+    font-weight:700;
+    margin:14px 0 10px;
+    color:var(--paper);
+  }
+  .menu-card p{
+    color:var(--paper-dim);
+    font-size:0.94rem;
+    line-height:1.6;
+  }
+
+  /* ---------- WHO ---------- */
+  .who-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+  }
+  .who-card{
+    padding:26px;
+    border-radius:var(--radius);
+    background:linear-gradient(160deg, rgba(232,163,61,0.08), rgba(232,163,61,0.02));
+    border:1px solid var(--crust-line);
+  }
+  .who-card h3{
+    font-size:1.05rem;
+    font-weight:700;
+    color:var(--cheese);
+    margin-bottom:8px;
+  }
+  .who-card p{
+    color:var(--paper-dim);
+    font-size:0.94rem;
+    line-height:1.6;
+  }
+
+  /* ---------- BUILDING IN PUBLIC ---------- */
+  .honest-card{
+    background:var(--crust);
+    border:1px solid var(--crust-line);
+    border-left:3px solid var(--basil);
+    border-radius:var(--radius);
+    padding:32px 30px;
+  }
+  .honest-card p{
+    color:var(--paper-dim);
+    font-size:1.02rem;
+    line-height:1.7;
+  }
+  .honest-card p + p{ margin-top:14px; }
+  .honest-card strong{ color:var(--paper); }
+
+  /* ---------- CONTACT ---------- */
+  .contact-box{
+    text-align:center;
+    padding:64px 40px;
+    border-radius:20px;
+    background:linear-gradient(160deg, rgba(193,67,42,0.14), rgba(232,163,61,0.08));
+    border:1px solid var(--crust-line);
+  }
+  .contact-box h2{ margin-bottom:14px; }
+  .contact-box p{
+    color:var(--paper-dim);
+    max-width:44ch;
+    margin:0 auto 30px;
+    font-size:1.02rem;
+  }
+  .contact-actions{
+    display:flex;
+    gap:16px;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+  .slots-note{
+    margin-top:26px;
+    font-family:'Space Mono', monospace;
+    font-size:0.72rem;
+    color:var(--paper-dim);
+    letter-spacing:0.03em;
+  }
+
+  footer{
+    padding:40px 0 50px;
+    text-align:center;
+    color:var(--paper-dim);
+    font-size:0.82rem;
+  }
+  footer .brand-mark{ font-size:1rem; }
+
+  @media (max-width:820px){
+    header.hero .wrap{ grid-template-columns:1fr; }
+    .receipt{ transform:rotate(0deg); max-width:340px; margin:0 auto; }
+    .menu-grid{ grid-template-columns:1fr; }
+    .who-grid{ grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand"><span class="brand-mark">🍕</span> The Pizza Social Media</div>
+    <a class="cta-small" href="#contact">Let's build together</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">CRM + Social Growth — for people who ship</div>
+      <h1>Fueled by late nights.<br>Built for <em>launch day.</em></h1>
+      <p class="hero-sub">The Pizza Social Media handles the wishlist funnels, Discord flows, and social growth for indie game studios and creators — run by someone who's actually up at 2am doing it too.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#contact">Let's build together</a>
+        <a class="btn-ghost" href="#menu">See the menu ↓</a>
+      </div>
+    </div>
+
+    <div class="receipt" aria-hidden="true">
+      <div class="receipt-head">ORDER #001</div>
+      <div class="receipt-sub">THE PIZZA SOCIAL MEDIA</div>
+      <ul class="receipt-items">
+        <li><span>Lifecycle CRM</span><span>1x</span></li>
+        <li><span>Social growth</span><span>1x</span></li>
+        <li><span>Launch campaign</span><span>1x</span></li>
+        <li><span>Agency-speak</span><span>0x</span></li>
+      </ul>
+      <div class="receipt-total"><span>TOTAL</span><span>YOUR AUDIENCE</span></div>
+      <div class="receipt-foot">*** THANKS FOR BUILDING WITH US ***</div>
+    </div>
+  </div>
+</header>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">The menu</div>
+      <h2>Three things, done properly</h2>
+      <p>No bundles you don't need. Pick what your studio or channel actually needs right now.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <div class="num mono">— lifecycle —</div>
+        <h3>CRM</h3>
+        <p>Wishlist funnels, Discord onboarding, and email flows that read like a person wrote them — because one did.</p>
+      </div>
+      <div class="menu-card">
+        <div class="num mono">— reach —</div>
+        <h3>Social growth</h3>
+        <p>A content strategy built for your genre and your platform, not a generic calendar template.</p>
+      </div>
+      <div class="menu-card">
+        <div class="num mono">— the sprint —</div>
+        <h3>Launch campaigns</h3>
+        <p>The two weeks before and after your release date, planned so launch day isn't the first time you think about it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="who">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Who it's for</div>
+      <h2>Built for two kinds of people</h2>
+    </div>
+    <div class="who-grid">
+      <div class="who-card">
+        <h3>Indie game studios</h3>
+        <p>Solo devs to small teams — you're heads-down in the build and the marketing keeps sliding to "next week."</p>
+      </div>
+      <div class="who-card">
+        <h3>Creators & streamers</h3>
+        <p>You're growing a real community, not chasing vanity numbers, and want the boring parts systemized.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proof">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Right now</div>
+      <h2>We're building in public — starting with ourselves</h2>
+    </div>
+    <div class="honest-card">
+      <p><strong>No padded case studies here yet.</strong> This account is brand new. Instead of pretending otherwise, we're growing it the same way we'll grow yours — in public, one real post at a time.</p>
+      <p>Follow along and watch the process, or be one of the first studios we build alongside.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-box">
+      <h2>Let's build something worth following</h2>
+      <p>DM on Instagram. Tell us what you're building and where it's stuck.</p>
+      <div class="contact-actions">
+        <a class="btn-primary" href="https://instagram.com/thepizzasocialmedia" target="_blank" rel="noopener">DM on Instagram</a>
+      </div>
+      <div class="slots-note mono">TAKING A SMALL NUMBER OF EARLY PARTNERS</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="brand-mark">🍕</span> The Pizza Social Media — CRM &amp; growth for indie studios and creators
+  </div>
+</footer>
+
+</body>
+</html>

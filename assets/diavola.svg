@@ -1,0 +1,16 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='300' height='150'><g>
+  <ellipse cx='150.0' cy='75.0' rx='165' ry='93' fill='#C1432A' opacity='0.28'/>
+  <circle cx="50" cy="35" r="19" fill="#5c150c"/><circle cx="50" cy="35" r="11" fill="#B0331C"/>
+  <circle cx="150" cy="25" r="18" fill="#5c150c"/><circle cx="150" cy="25" r="10" fill="#B0331C"/>
+  <circle cx="245" cy="45" r="19" fill="#5c150c"/><circle cx="245" cy="45" r="11" fill="#B0331C"/>
+  <circle cx="90" cy="90" r="18" fill="#5c150c"/><circle cx="90" cy="90" r="10" fill="#B0331C"/>
+  <circle cx="200" cy="105" r="17" fill="#5c150c"/><circle cx="200" cy="105" r="9" fill="#B0331C"/>
+  <circle cx="40" cy="125" r="15" fill="#5c150c"/><circle cx="40" cy="125" r="8" fill="#B0331C"/>
+  <g fill='#F0672E'>
+    <path transform='translate(200,60) rotate(20)' d='M0 0l8 3-3 8-8-2z'/>
+    <path transform='translate(110,55) rotate(-15)' d='M0 0l7 3-3 7-7-2z'/>
+    <path transform='translate(260,100) rotate(40)' d='M0 0l8 3-3 8-8-2z'/>
+    <path transform='translate(140,115) rotate(10)' d='M0 0l6 2-2 6-6-2z'/>
+    <path transform='translate(30,70) rotate(-30)' d='M0 0l7 2-2 7-7-2z'/>
+  </g>
+</g></svg>

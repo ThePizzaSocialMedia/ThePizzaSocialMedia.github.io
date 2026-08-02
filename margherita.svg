@@ -1,0 +1,12 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='300' height='150'><g>
+  <ellipse cx='150.0' cy='75.0' rx='165' ry='93' fill='#C1432A' opacity='0.22'/>
+  <path d='M40 35c-20-2-30 11-25 27 4 13 24 19 39 14 13-4 20-17 15-30-5-12-17-13-29-11z' fill='#7a5c33' opacity='0.4'/>
+  <path d='M40 35c-20-2-30 11-25 27 4 13 24 19 39 14 13-4 20-17 15-30-5-12-17-13-29-11z' fill='#FBF3E3' opacity='0.95' transform='translate(-2,-2)'/>
+  <path d='M175 20c-23 1-31 18-22 32 8 12 30 14 43 5 12-8 14-25 2-32-6-4-15-5-23-5z' fill='#7a5c33' opacity='0.38'/>
+  <path d='M175 20c-23 1-31 18-22 32 8 12 30 14 43 5 12-8 14-25 2-32-6-4-15-5-23-5z' fill='#FBF3E3' opacity='0.93' transform='translate(-2,-2)'/>
+  <path d='M225 85c-16 2-20 15-12 24 8 8 25 6 31-4 5-9 0-19-11-23-3-1-6-1-8 3z' fill='#7a5c33' opacity='0.34'/>
+  <path d='M225 85c-16 2-20 15-12 24 8 8 25 6 31-4 5-9 0-19-11-23-3-1-6-1-8 3z' fill='#FBF3E3' opacity='0.9' transform='translate(-2,-2)'/>
+  <g transform="translate(120,105) rotate(-8)"><circle r="16" fill="#B23A22"/><circle r="12.5" fill="#D8583A"/><g stroke="#F2B99A" stroke-width="1.3" opacity="0.85"><line x1="0" y1="-9" x2="0" y2="9"/><line x1="-8" y1="-5" x2="8" y2="5"/><line x1="-8" y1="5" x2="8" y2="-5"/></g></g>
+  <g transform="translate(155,115) rotate(14)"><circle r="16" fill="#B23A22"/><circle r="12.5" fill="#D8583A"/><g stroke="#F2B99A" stroke-width="1.3" opacity="0.85"><line x1="0" y1="-9" x2="0" y2="9"/><line x1="-8" y1="-5" x2="8" y2="5"/><line x1="-8" y1="5" x2="8" y2="-5"/></g></g>
+  <g fill='#5F7A45'><path d='M95 55c9-12 26-12 32-3 3 9-11 18-23 16-8-1-13-8-9-13z'/><path d='M210 45c7-9 20-9 25-2 2 8-9 15-19 13-6-1-9-6-6-11z'/></g>
+</g></svg>

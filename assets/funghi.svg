@@ -1,0 +1,22 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='300' height='150'><g><ellipse cx='150.0' cy='75.0' rx='165' ry='93' fill='#C1432A' opacity='0.22'/><g transform="translate(115,28) scale(1.0)"><circle r="10" fill="#151009"/><circle r="5" fill="#8a6a4a"/><ellipse rx="2.8" ry="2" cx="-2.4" cy="-2.4" fill="#5a5048" opacity="0.55"/></g><g transform="translate(250,40) rotate(20) scale(1.0)"><ellipse rx="11" ry="8.5" fill="#151009"/><ellipse rx="4" ry="3.4" cx="-3.3" cy="-2.6" fill="#4a4038" opacity="0.6"/></g><g transform="translate(30,90) rotate(-15) scale(1.0)"><ellipse rx="11" ry="8.5" fill="#151009"/><ellipse rx="4" ry="3.4" cx="-3.3" cy="-2.6" fill="#4a4038" opacity="0.6"/></g><g transform="translate(190,95) scale(1.0)"><circle r="10" fill="#151009"/><circle r="5" fill="#8a6a4a"/><ellipse rx="2.8" ry="2" cx="-2.4" cy="-2.4" fill="#5a5048" opacity="0.55"/></g><g transform="translate(70,130) rotate(10) scale(1.0)"><ellipse rx="11" ry="8.5" fill="#151009"/><ellipse rx="4" ry="3.4" cx="-3.3" cy="-2.6" fill="#4a4038" opacity="0.6"/></g><g transform="translate(225,130) scale(1.0)"><circle r="10" fill="#151009"/><circle r="5" fill="#8a6a4a"/><ellipse rx="2.8" ry="2" cx="-2.4" cy="-2.4" fill="#5a5048" opacity="0.55"/></g>
+  <g>
+    <g transform="translate(40,35) rotate(333)"><ellipse rx="3.4" ry="2.3" fill="#C9922E"/><ellipse rx="1.9" ry="1.1" cx="-0.7" cy="-0.5" fill="#EFC257"/></g>
+    <g transform="translate(62,40) rotate(48)"><ellipse rx="3.8" ry="2.6" fill="#C9922E"/><ellipse rx="2.1" ry="1.3" cx="-0.8" cy="-0.5" fill="#EFC257"/></g>
+    <g transform="translate(37,39) rotate(109)"><ellipse rx="3.4" ry="2.3" fill="#C9922E"/><ellipse rx="1.9" ry="1.1" cx="-0.7" cy="-0.5" fill="#EFC257"/></g>
+    <g transform="translate(49,36) rotate(35)"><ellipse rx="3.6" ry="2.4" fill="#C9922E"/><ellipse rx="2.0" ry="1.2" cx="-0.7" cy="-0.5" fill="#EFC257"/></g>
+    <g transform="translate(167,38) rotate(63)"><ellipse rx="4.3" ry="2.9" fill="#C9922E"/><ellipse rx="2.4" ry="1.4" cx="-0.9" cy="-0.6" fill="#EFC257"/></g>
+    <g transform="translate(186,40) rotate(298)"><ellipse rx="4.3" ry="2.9" fill="#C9922E"/><ellipse rx="2.4" ry="1.4" cx="-0.9" cy="-0.6" fill="#EFC257"/></g>
+    <g transform="translate(184,38) rotate(203)"><ellipse rx="3.4" ry="2.3" fill="#C9922E"/><ellipse rx="1.9" ry="1.1" cx="-0.7" cy="-0.5" fill="#EFC257"/></g>
+    <g transform="translate(173,21) rotate(285)"><ellipse rx="4.3" ry="2.9" fill="#C9922E"/><ellipse rx="2.4" ry="1.4" cx="-0.9" cy="-0.6" fill="#EFC257"/></g>
+    <g transform="translate(104,80) rotate(276)"><ellipse rx="3.5" ry="2.4" fill="#C9922E"/><ellipse rx="1.9" ry="1.2" cx="-0.7" cy="-0.5" fill="#EFC257"/></g>
+    <g transform="translate(100,93) rotate(349)"><ellipse rx="3.6" ry="2.4" fill="#C9922E"/><ellipse rx="2.0" ry="1.2" cx="-0.7" cy="-0.5" fill="#EFC257"/></g>
+    <g transform="translate(109,94) rotate(327)"><ellipse rx="3.6" ry="2.4" fill="#C9922E"/><ellipse rx="2.0" ry="1.2" cx="-0.7" cy="-0.5" fill="#EFC257"/></g>
+    <g transform="translate(94,93) rotate(32)"><ellipse rx="4.0" ry="2.7" fill="#C9922E"/><ellipse rx="2.2" ry="1.4" cx="-0.8" cy="-0.5" fill="#EFC257"/></g>
+    <g transform="translate(256,109) rotate(272)"><ellipse rx="3.8" ry="2.6" fill="#C9922E"/><ellipse rx="2.1" ry="1.3" cx="-0.8" cy="-0.5" fill="#EFC257"/></g>
+    <g transform="translate(251,102) rotate(299)"><ellipse rx="4.3" ry="2.9" fill="#C9922E"/><ellipse rx="2.4" ry="1.4" cx="-0.9" cy="-0.6" fill="#EFC257"/></g>
+    <g transform="translate(252,97) rotate(127)"><ellipse rx="4.2" ry="2.9" fill="#C9922E"/><ellipse rx="2.3" ry="1.4" cx="-0.8" cy="-0.6" fill="#EFC257"/></g>
+    <g transform="translate(148,134) rotate(153)"><ellipse rx="3.9" ry="2.7" fill="#C9922E"/><ellipse rx="2.1" ry="1.4" cx="-0.8" cy="-0.5" fill="#EFC257"/></g>
+    <g transform="translate(174,126) rotate(229)"><ellipse rx="3.7" ry="2.5" fill="#C9922E"/><ellipse rx="2.0" ry="1.2" cx="-0.7" cy="-0.5" fill="#EFC257"/></g>
+    <g transform="translate(148,119) rotate(262)"><ellipse rx="3.8" ry="2.6" fill="#C9922E"/><ellipse rx="2.1" ry="1.3" cx="-0.8" cy="-0.5" fill="#EFC257"/></g>
+  </g>
+</g></svg>
